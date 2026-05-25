@@ -1,0 +1,431 @@
+/* ===== Steven Rogers for Cherokee County Commissioner District 4 – Site Styles ===== */
+
+:root {
+    --sar-blue: #003388;
+    --sar-blue-dark: #002266;
+    --sar-gold: #5d95cd;
+    --sar-gold-light: #F5C748;
+    --sar-white: #ffffff;
+    --sar-light: #f4f7fb;
+    --sar-gray: #6c757d;
+    --sar-dark: #1a1a2e;
+    --sar-red: #BF0A30;
+}
+
+/* ---------- Reset & Base ---------- */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+img { max-width: 100%; height: auto; }
+
+a { color: var(--sar-blue); text-decoration: none; }
+a:hover { color: var(--sar-gold); }
+
+/* ---------- Navbar ---------- */
+.sar-navbar {
+    background: var(--sar-blue-dark);
+    padding: .5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+    box-shadow: 0 2px 12px rgba(0,0,0,.25);
+}
+
+.sar-navbar .navbar-brand {
+    font-weight: 800;
+    font-size: 1.35rem;
+    color: var(--sar-gold) !important;
+    letter-spacing: .5px;
+}
+
+.sar-navbar .navbar-brand span {
+    color: var(--sar-white);
+    font-weight: 400;
+    font-size: .85rem;
+    display: block;
+    letter-spacing: .3px;
+}
+
+.sar-navbar .nav-link {
+    color: rgba(255,255,255,.85) !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .85rem;
+    letter-spacing: .6px;
+    padding: .6rem 1rem !important;
+    transition: color .2s;
+}
+
+.sar-navbar .nav-link:hover,
+.sar-navbar .nav-link.active {
+    color: var(--sar-gold) !important;
+}
+
+.sar-navbar .navbar-toggler {
+    border-color: rgba(255,255,255,.3);
+}
+
+.sar-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ---------- Hero ---------- */
+.sar-hero {
+    position: relative;
+    background: linear-gradient(135deg, var(--sar-blue-dark) 0%, var(--sar-blue) 60%, #1a5276 100%);
+    color: var(--sar-white);
+    padding: 5rem 0 4rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sar-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 14px;
+    background: var(--sar-white);
+    clip-path: ellipse(80% 100% at 50% 100%);
+}
+
+.sar-hero h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: .25rem;
+}
+
+.sar-hero h1 .highlight {
+    color: var(--sar-gold);
+}
+
+.sar-hero .tagline {
+    font-size: 1.3rem;
+    font-weight: 300;
+    opacity: .9;
+    margin-bottom: 2rem;
+}
+
+.sar-hero .hero-photo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 5px solid var(--sar-gold);
+    box-shadow: 0 8px 30px rgba(0,0,0,.35);
+    margin-bottom: 1.5rem;
+}
+
+/* ---------- Buttons ---------- */
+.btn-sar-gold {
+    background: var(--sar-gold);
+    color: var(--sar-dark) !important;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: .75rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    transition: transform .2s, box-shadow .2s, background .2s;
+}
+
+.btn-sar-gold:hover {
+    background: var(--sar-gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(232,163,23,.4);
+    color: var(--sar-dark) !important;
+}
+
+.btn-sar-blue {
+    background: var(--sar-blue);
+    color: var(--sar-white) !important;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: .75rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    transition: transform .2s, box-shadow .2s, background .2s;
+}
+
+.btn-sar-blue:hover {
+    background: var(--sar-blue-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,51,136,.4);
+    color: var(--sar-white) !important;
+}
+
+.btn-sar-outline {
+    background: transparent;
+    color: var(--sar-white) !important;
+    font-weight: 700;
+    border: 2px solid var(--sar-white);
+    border-radius: 50px;
+    padding: .7rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    transition: all .2s;
+}
+
+.btn-sar-outline:hover {
+    background: var(--sar-white);
+    color: var(--sar-blue) !important;
+}
+
+/* ---------- Sections ---------- */
+.sar-section {
+    padding: 4.5rem 0;
+}
+
+.sar-section-alt {
+    background: var(--sar-light);
+}
+
+.sar-section-blue {
+    background: var(--sar-blue);
+    color: var(--sar-white);
+}
+
+.sar-section-blue a { color: var(--sar-gold); }
+
+.section-heading {
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.section-subheading {
+    font-size: 1.1rem;
+    color: var(--sar-gray);
+    margin-bottom: 2.5rem;
+}
+
+.sar-section-blue .section-subheading {
+    color: rgba(255,255,255,.7);
+}
+
+.gold-accent {
+    color: var(--sar-gold);
+}
+
+/* ---------- Cards / Issue Cards ---------- */
+.sar-card {
+    background: var(--sar-white);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,.07);
+    padding: 2rem;
+    height: 100%;
+    transition: transform .2s, box-shadow .2s;
+    border-top: 4px solid var(--sar-gold);
+}
+
+.sar-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,.12);
+}
+
+.sar-card .card-icon {
+    font-size: 2.5rem;
+    color: var(--sar-blue);
+    margin-bottom: 1rem;
+}
+
+.sar-card h4 {
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: .75rem;
+    color: var(--sar-blue-dark);
+}
+
+/* ---------- About / Bio ---------- */
+.bio-photo {
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,.15);
+    width: 100%;
+    object-fit: cover;
+}
+
+.bio-text p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+/* ---------- CTA Banner ---------- */
+.sar-cta-banner {
+    background: linear-gradient(135deg, var(--sar-blue-dark), var(--sar-blue));
+    color: var(--sar-white);
+    padding: 3.5rem 0;
+    text-align: center;
+}
+
+.sar-cta-banner h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.sar-cta-banner p {
+    font-size: 1.15rem;
+    opacity: .85;
+    margin-bottom: 1.5rem;
+}
+
+/* ---------- Gallery ---------- */
+.gallery-img {
+    border-radius: 12px;
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 4px 16px rgba(0,0,0,.1);
+    transition: transform .3s;
+}
+
+.card-img-top {
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 4px 16px rgba(0,0,0,.1);
+    transition: transform .3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+/* ---------- Footer ---------- */
+.sar-footer {
+    background: var(--sar-dark);
+    color: rgba(255,255,255,.7);
+    padding: 3rem 0 1.5rem;
+}
+
+.sar-footer h5 {
+    color: var(--sar-gold);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.sar-footer a {
+    color: rgba(255,255,255,.7);
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.sar-footer a:hover {
+    color: var(--sar-gold);
+}
+
+.sar-footer .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.1);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.sar-footer .social-icon {
+    font-size: 1.5rem;
+    margin-right: .75rem;
+    transition: color .2s, transform .2s;
+}
+
+.sar-footer .social-icon:hover {
+    color: var(--sar-gold);
+    transform: scale(1.15);
+}
+
+/* ---------- Contact Form ---------- */
+.sar-form .form-control {
+    border-radius: 10px;
+    padding: .75rem 1rem;
+    border: 1px solid #ddd;
+}
+
+.sar-form .form-control:focus {
+    border-color: var(--sar-blue);
+    box-shadow: 0 0 0 .2rem rgba(0,51,136,.15);
+}
+
+/* ---------- Stat counters ---------- */
+.stat-box {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: var(--sar-gold);
+    line-height: 1.1;
+}
+
+.stat-label {
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: .8;
+}
+
+/* ---------- Page Header (inner pages) ---------- */
+.sar-page-header {
+    background: linear-gradient(135deg, var(--sar-blue-dark) 0%, var(--sar-blue) 100%);
+    color: var(--sar-white);
+    padding: 4rem 0 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.sar-page-header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: var(--sar-white);
+    clip-path: ellipse(80% 100% at 50% 100%);
+}
+
+.sar-page-header h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.sar-page-header-alt::after {
+    background: var(--sar-light);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .sar-hero h1 { font-size: 2rem; }
+    .sar-hero .tagline { font-size: 1rem; }
+    .sar-hero .hero-photo { width: 160px; height: 160px; }
+    .section-heading { font-size: 1.7rem; }
+    .sar-cta-banner h2 { font-size: 1.5rem; }
+    .stat-number { font-size: 2rem; }
+    .btn-sar-gold, .btn-sar-blue, .btn-sar-outline { padding: .6rem 1.5rem; font-size: .9rem; }
+}
+
+/* ---------- Utility ---------- */
+.text-sar-blue { color: var(--sar-blue) !important; }
+.text-sar-gold { color: var(--sar-gold) !important; }
+.bg-sar-blue { background: var(--sar-blue) !important; }
+.bg-sar-gold { background: var(--sar-gold) !important; }
+.fw-800 { font-weight: 800 !important; }
