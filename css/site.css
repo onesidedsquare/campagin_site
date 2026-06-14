@@ -78,6 +78,32 @@ a:hover { color: var(--sar-gold); }
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+.btn-flag {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: inherit;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .2s, transform .2s;
+}
+
+.btn-flag img {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+}
+
+.btn-flag:hover,
+.btn-flag.active {
+    background: rgba(255,255,255,.18);
+    transform: translateY(-1px);
+}
+
 /* ---------- Hero ---------- */
 .sar-hero {
     position: relative;
@@ -231,6 +257,7 @@ a:hover { color: var(--sar-gold); }
     height: 100%;
     transition: transform .2s, box-shadow .2s;
     border-top: 4px solid var(--sar-gold);
+    border-bottom: 4px solid var(--sar-gold);
 }
 
 .sar-card:hover {
@@ -346,7 +373,7 @@ a:hover { color: var(--sar-gold); }
 }
 
 .sar-footer .social-icon:hover {
-    color: var(--sar-gold);
+    color: var(--sar-gold-light);
     transform: scale(1.15);
 }
 
@@ -429,3 +456,11 @@ a:hover { color: var(--sar-gold); }
 .bg-sar-blue { background: var(--sar-blue) !important; }
 .bg-sar-gold { background: var(--sar-gold) !important; }
 .fw-800 { font-weight: 800 !important; }
+
+/* Hover utility: light blue background on hover */
+.hover-blue {
+    transition: background-color .18s ease;
+}
+.hover-blue:hover {
+    background-color: #e6f7ff;
+}

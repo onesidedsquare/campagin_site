@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="css/site.css" />
+    <link rel="icon" href="pics/favicon.ico" />
 </head>
 <body>
 
@@ -25,15 +26,22 @@
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Steven</a></li>
-                    <li class="nav-item"><a class="nav-link" href="issues.html">Issues</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="getinvolved.html">Get Involved</a></li>
-                    <li class="nav-item"><a class="nav-link" href="electioninfo.html">Election Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-translate-key="nav_home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" data-translate-key="nav_about">About Steven</a></li>
+                    <li class="nav-item"><a class="nav-link" href="issues.html" data-translate-key="nav_issues">Issues</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="getinvolved.html" data-translate-key="nav_getinvolved">Get Involved</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html" data-translate-key="nav_events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="electioninfo.html" data-translate-key="nav_electioninfo">Election Info</a></li>
                     <li class="nav-item ms-lg-2">
                         <a class="btn btn-sar-gold btn-sm" href="https://secure.actblue.com/donate/steven-rogers-1" target="_blank">
-                            <i class="bi bi-heart-fill"></i> Donate
+                            <i class="bi bi-heart-fill"></i> <span data-translate-key="nav_donate">Donate</span>
                         </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button type="button" class="btn btn-flag btn-sm lang-btn" data-lang="en" aria-label="English"><img src="pics/flags/us.svg" alt="US flag" /></button>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button type="button" class="btn btn-flag btn-sm lang-btn" data-lang="es" aria-label="Español"><img src="pics/flags/mx.svg" alt="Mexico flag" /></button>
                     </li>
                 </ul>
             </div>
@@ -43,8 +51,8 @@
     <!-- ======== PAGE HEADER ======== -->
     <section class="sar-page-header">
         <div class="container">
-            <h1>Get <span class="text-sar-gold">Involved</span></h1>
-            <p class="mb-0" style="opacity:.85; font-size:1.1rem;">This campaign runs on people power. Here's how you can jump in.</p>
+            <h1><span class="text-sar-gold" data-translate-key="involved_header_title">Get Involved</span></h1>
+            <p class="mb-0" style="opacity:.85; font-size:1.1rem;" data-translate-key="involved_header_sub">This campaign runs on people power, here's how you can help.</p>
         </div>
     </section>
 
@@ -58,10 +66,10 @@
                     <div class="sar-card d-flex flex-column">
                         <div class="card-icon"><i class="bi bi-heart-fill"></i></div>
                         <h4>Donate</h4>
-                        <p>Every dollar fuels our grassroots campaign&mdash;yard signs, outreach, and getting Steven's message to every doorstep in District 4.</p>
+                        <p>Every dollar fuels our grassroots campaign! Support yard signs, outreach, and getting Steven's message to every doorstep in District 4.</p>
                         <div class="mt-auto">
                             <a href="https://secure.actblue.com/donate/steven-rogers-1" target="_blank" class="btn btn-sar-gold">
-                                Donate via ActBlue <i class="bi bi-arrow-right"></i>
+                                Donate via ActBlue
                             </a>
                         </div>
                     </div>
@@ -74,8 +82,8 @@
                         <h4>Volunteer</h4>
                         <p>Knock doors, make calls, host events, or help behind the scenes. Whatever your skill, there's a place for you on Team Rogers.</p>
                         <div class="mt-auto">
-                            <a href="#volunteer-form" class="btn btn-sar-blue">
-                                Sign Up Below <i class="bi bi-arrow-down"></i>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSexvReykY9pMuDkwaIe1UY3V50Yi4Y08iiDUpwEhB8YjjAe_g/viewform" target="_blank" class="btn btn-sar-blue">
+                                Sign Up Here 
                             </a>
                         </div>
                     </div>
@@ -89,7 +97,7 @@
                         <p>Make sure your voice is heard on Election Day. It takes just a few minutes to register or check your registration status.</p>
                         <div class="mt-auto">
                             <a href="https://georgia.gov/register-vote" target="_blank" class="btn btn-sar-blue">
-                                Register Now <i class="bi bi-arrow-right"></i>
+                                Register Now
                             </a>
                         </div>
                     </div>
@@ -104,37 +112,45 @@
         <div class="container">
             <h2 class="section-heading text-center">More Ways to <span class="gold-accent">Help</span></h2>
             <p class="section-subheading text-center">Every action counts towards our common goal. Pick what works for you.</p>
-            <div class="row g-4 text-center">
-                <div class="col-md-3 col-6">
+            
+            <div class="row g-4">
+                <div class="col-md-4">
                     <div class="sar-card">
                         <i class="bi bi-share-fill text-sar-blue" style="font-size:2rem;"></i>
                         <h5 class="mt-2">Spread the Word</h5>
-                        <p class="small">Share Steven's campaign on social media and talk to your neighbors about the election.</p>
+                        <p class="medium">Share Steven's campaign on social media then talk to your friends and neighbors about the election.</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-4">
                     <div class="sar-card">
                         <i class="bi bi-sign-intersection-fill text-sar-blue" style="font-size:2rem;"></i>
                         <h5 class="mt-2">Host a Yard Sign</h5>
-                        <p class="small">Show your support! Request a yard sign and let District 4 know you're on Team Steven.</p>
+                        <p class="medium">Show your support! Request a yard sign and let District 4 know you're on Team Rogers.</p>
+                        <a href="https://forms.gle/u5sbwj4vWMjqXuLF6" target="_blank" class="btn btn-sm btn-sar-blue mt-1">Request Yard Sign</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-4">
                     <div class="sar-card">
                         <i class="bi bi-briefcase-fill text-sar-blue" style="font-size:2rem;"></i>
                         <h5 class="mt-2">Join the Staff</h5>
-                        <p class="small">Looking for campaign work? Apply to join the team.</p>
+                        <p class="medium">Looking to join campaign and spread the word? Apply to join the team! Let us know how you can help.</p>
                         <a href="https://forms.gle/FRyj7a3sxvrRVHGw5" target="_blank" class="btn btn-sm btn-sar-blue mt-1">Apply</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+            </div>
+        </div>
+        <p></p>
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-6 offset-md-3">
                     <div class="sar-card">
                         <i class="bi bi-instagram text-sar-blue" style="font-size:2rem;"></i>
                         <h5 class="mt-2">Follow Us</h5>
-                        <p class="small">Stay up to date on events, news, and ways to get involved.</p>
+                        <p class="medium">Stay up to date on events, get to know me better, local news, and ways to get involved.</p>
                         <div class="d-flex justify-content-center gap-2 mt-1">
-                            <a href="https://www.instagram.com/electstevenrogers" target="_blank" class="btn btn-sm btn-sar-blue"><i class="bi bi-instagram"></i> IG</a>
-                            <a href="https://www.tiktok.com/@electstevenrogers" target="_blank" class="btn btn-sm btn-sar-blue"><i class="bi bi-tiktok"></i> TikTok</a>
+                            <a href="https://www.instagram.com/electstevenrogers" target="_blank" class="btn btn-sm btn-sar-blue"><i class="bi bi-instagram"></i>  Instagram  </a>
+                            <a href="https://www.tiktok.com/@electstevenrogers" target="_blank" class="btn btn-sm btn-sar-blue"><i class="bi bi-tiktok"></i>  TikTok  </a>
+                            <a href="https://www.facebook.com/electstevenrogers" target="_blank" class="btn btn-sm btn-sar-blue"><i class="bi bi-facebook"></i>  Facebook  </a>
                         </div>
                     </div>
                 </div>
@@ -142,15 +158,15 @@
         </div>
     </section>
 
-    <!-- ======== VOLUNTEER / CONTACT FORM ======== -->
+    <!-- ======== CONTACT FORM ======== -->
     <section class="sar-section" id="volunteer-form">
         <div class="container">
             <div class="row g-5 align-items-start">
                 <div class="col-lg-6">
-                    <h2 class="section-heading" style="text-align:left;">Volunteer <span class="gold-accent">Sign Up</span></h2>
-                    <p>Fill out the form and we'll be in touch with ways you can help. Whether you have an hour or a whole weekend, there's something meaningful you can do.</p>
+                    <h2 class="section-heading" style="text-align:left;">Contact <span class="gold-accent">Form</span></h2>
+                    <p>Fill out the form and we'll be in touch.</p>
                     <form class="sar-form" action="https://formsubmit.co/steven@electstevenrogers.com" method="POST">
-                        <input type="hidden" name="_subject" value="New Volunteer Sign-Up from electstevenrogers.com Website" />
+                        <input type="hidden" name="_subject" value="contact request from website" />
                         <input type="hidden" name="_captcha" value="false" />
                         <input type="hidden" name="_next" value="https://electstevenrogers.com/getinvolved.html?thanks=1" />
                         <div class="mb-3">
@@ -166,20 +182,8 @@
                             <input type="tel" class="form-control" id="volPhone" name="phone" />
                         </div>
                         <div class="mb-3">
-                            <label for="volInterest" class="form-label fw-bold">How would you like to help?</label>
-                            <select class="form-control" id="volInterest" name="interest">
-                                <option value="">-- Select --</option>
-                                <option value="Door Knocking">Door Knocking / Canvassing</option>
-                                <option value="Phone Banking">Phone Banking</option>
-                                <option value="Yard Sign">Host a Yard Sign</option>
-                                <option value="Events">Help at Events</option>
-                                <option value="Social Media">Social Media / Content</option>
-                                <option value="Other">Other / Anything Needed</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
                             <label for="volMessage" class="form-label fw-bold">Message <small class="text-muted">(optional)</small></label>
-                            <textarea class="form-control" id="volMessage" name="message" rows="3"></textarea>
+                            <textarea class="form-control" id="volMessage" name="message" rows="6"></textarea>
                         </div>
                         <button type="submit" class="btn btn-sar-gold btn-lg w-100">
                             <i class="bi bi-send-fill"></i> Send
@@ -190,7 +194,7 @@
                     <h2 class="section-heading" style="text-align:left;">Contact <span class="gold-accent">Steven</span></h2>
                     <p>Have a question, a concern, or just want to say hello? Steven wants to hear from you.</p>
                     <a href="mailto:steven@electstevenrogers.com">
-                        <div class="sar-card mb-4">
+                        <div class="sar-card mb-4 hover-blue">
                             <h5><i class="bi bi-envelope-fill text-sar-blue me-2"></i> Email</h5>
                             <p class="mb-0">steven@electstevenrogers.com</p>
                         </div>
@@ -265,5 +269,6 @@
     </footer>
 
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/lang-switch.js"></script>
 </body>
 </html>
