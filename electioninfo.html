@@ -8,7 +8,7 @@
     <title>Election Information | Steven Rogers for Cherokee County Commissioner</title>
     <meta name="description" content="Voter resources for Cherokee County Commissioner District 4 — check your registration, register to vote, find your polling place, and explore the district map." />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="css/site.css" />
     <link rel="icon" href="pics/favicon.ico" />
 </head>
@@ -59,19 +59,19 @@
     <!-- ======== VOTER RESOURCE CARDS ======== -->
     <section class="sar-section">
         <div class="container">
-            <h2 class="section-heading text-center">Voter <span class="gold-accent">Resources</span></h2>
-            <p class="section-subheading text-center">Use the links below to check your registration, register online, or connect with your local elections office.</p>
+            <h2 class="section-heading text-center" data-translate-key="election_resources_title">Voter Resources</h2>
+            <p class="section-subheading text-center" data-translate-key="election_resources_sub">Use the links below to check your registration, register online, or connect with your local elections office.</p>
             <div class="row g-4 text-center justify-content-center">
 
                 <!-- Check Voter Status -->
                 <div class="col-md-4">
                     <div class="sar-card d-flex flex-column h-100">
                         <div class="card-icon"><i class="bi bi-person-check-fill"></i></div>
-                        <h4>Check Your Voter Status</h4>
-                        <p>Verify your registration, confirm your polling location, and review your voting history through Georgia's official My Voter Page.</p>
+                        <h4 data-translate-key="election_card_1_title">Check Your Voter Status</h4>
+                        <p data-translate-key="election_card_1_text">Verify your registration, confirm your polling location, and review your voting history through Georgia's official My Voter Page.</p>
                         <div class="mt-auto">
                             <a href="https://mvp.sos.ga.gov/s/" target="_blank" class="btn btn-sar-gold">
-                                My Voter Page <i class="bi bi-arrow-right"></i>
+                                <span data-translate-key="election_card_1_btn">My Voter Page</span> <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -81,11 +81,11 @@
                 <div class="col-md-4">
                     <div class="sar-card d-flex flex-column h-100">
                         <div class="card-icon"><i class="bi bi-pencil-square"></i></div>
-                        <h4>Register to Vote Online</h4>
-                        <p>Not yet registered? Georgia's Secretary of State offers a quick, secure online registration portal. It takes just a few minutes.</p>
+                        <h4 data-translate-key="election_card_2_title">Register to Vote Online</h4>
+                        <p data-translate-key="election_card_2_text">Not yet registered? Georgia's Secretary of State offers a quick, secure online registration portal. It takes just a few minutes.</p>
                         <div class="mt-auto">
                             <a href="https://mvp.sos.ga.gov/s/olvr-home#no-back-button" target="_blank" class="btn btn-sar-gold">
-                                Register Now <i class="bi bi-arrow-right"></i>
+                                <span data-translate-key="election_card_2_btn">Register Now</span> <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -95,11 +95,11 @@
                 <div class="col-md-4">
                     <div class="sar-card d-flex flex-column h-100">
                         <div class="card-icon"><i class="bi bi-building-fill"></i></div>
-                        <h4>Cherokee County Board of Elections</h4>
-                        <p>Find local election information, early voting locations, absentee ballot requests, and election results for Cherokee County.</p>
+                        <h4 data-translate-key="election_card_3_title">Cherokee County Board of Elections</h4>
+                        <p data-translate-key="election_card_3_text">Find local election information, early voting locations, absentee ballot requests, and election results for Cherokee County.</p>
                         <div class="mt-auto">
                             <a href="https://cherokeegavotes.com/" target="_blank" class="btn btn-sar-gold">
-                                Cherokee Votes <i class="bi bi-arrow-right"></i>
+                                <span data-translate-key="election_card_3_btn">Cherokee Votes</span> <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -112,18 +112,18 @@
     <!-- ======== DISTRICT MAP ======== -->
     <section class="sar-section sar-section-alt">
         <div class="container">
-            <h2 class="section-heading text-center">District <span class="gold-accent">Map</span></h2>
-            <p class="section-subheading text-center">Explore Cherokee County Commissioner District 4, covering Woodstock, Towne Lake, Woodwind Station, Kellog Creek, and Oak Grove</p>
+            <h2 class="section-heading text-center" data-translate-key="election_map_title">District Map</h2>
+            <p class="section-subheading text-center" data-translate-key="election_map_sub">Explore Cherokee County Commissioner District 4, covering Woodstock, Towne Lake, Woodwind Station, Kellogg Creek, and Oak Grove</p>
 
             <!-- Official PDF Map Button -->
             <div class="text-center mb-4">
                 <a href="https://www.cherokeecountyga.gov/GIS/_resources//2022-Commission-Districts.pdf" target="_blank" class="btn btn-sar-blue btn-lg">
-                    <i class="bi bi-file-earmark-pdf-fill me-2"></i>View Official District 4 District Map (PDF)
+                    <i class="bi bi-file-earmark-pdf-fill me-2"></i><span data-translate-key="election_map_pdf_btn">View Official District 4 District Map (PDF)</span>
                 </a>
             </div>
             <div class="text-center mb-4">
                 <a href="https://gis.cherokeecountyga.gov/Html5Viewer/index.html?viewer=BOC" target="_blank" class="btn btn-sar-blue btn-lg">
-                    <i class="bi bi-globe2 me-2"></i>Search Your Address on Cherokee County's Interactive GIS Map
+                    <i class="bi bi-globe2 me-2"></i><span data-translate-key="election_map_gis_btn">Search Your Address on Cherokee County's Interactive GIS Map</span>
                 </a>
             </div>
             
@@ -132,8 +132,8 @@
             <div class="mb-3">
                 <div class="input-group input-group-lg">
                     <span class="input-group-text bg-white"><i class="bi bi-search text-muted"></i></span>
-                    <input type="text" id="addressInput" class="form-control" placeholder="Enter your address to see it on the map…" />
-                    <button class="btn btn-sar-gold" type="button" id="searchBtn">Find on Map</button>
+                    <input type="text" id="addressInput" class="form-control" placeholder="Enter your address to see it on the map..." data-translate-placeholder-key="election_map_placeholder" />
+                    <button class="btn btn-sar-gold" type="button" id="searchBtn" data-translate-key="election_map_find_btn">Find on Map</button>
                 </div>
                 <div id="mapMessage" class="mt-2 text-center" style="font-size:.875rem; min-height:1.25rem;"></div>
             </div>
@@ -141,24 +141,24 @@
             <!-- Interactive Google Map -->
             <div id="districtMap" style="border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.15); height:960px;"></div>
             <p class="text-center text-muted mt-3" style="font-size:.9rem;">
-                <i class="bi bi-info-circle me-1"></i>Type your address above to drop a pin on the map. For official boundary details, view the <a href="https://www.cherokeecountyga.gov/GIS/_resources//2022-Commission-Districts.pdf" target="_blank">PDF district map</a>.
+                <i class="bi bi-info-circle me-1"></i><span data-translate-key="election_map_info">Type your address above to drop a pin on the map. For official boundary details, view the PDF district map.</span>
             </p>
         </div>
     </section>
     <section class="sar-section">
         <div class="container">
-            <h2 class="section-heading text-center">Endorsements</h2>
+            <h2 class="section-heading text-center" data-translate-key="election_endorsements_title">Endorsements</h2>
             <img src="pics/endorsements/COMMONGOOD_ENDORSEMENT-Steven Rogers.jpg" alt="Candidate Endorsement Common Good" class="img-fluid mx-auto d-block"  />
             <p></p>
             <a href="https://www.votecommongood.com/wps-members/steven-rogers/" target="_blank" class="btn btn-sar-blue btn-lg d-block mx-auto" style="max-width:62%;">
-                <i class="bi bi-link-45deg me-2">Visit Candidates for Common Good</i>
+                <i class="bi bi-link-45deg me-2"></i><span data-translate-key="election_endorsements_btn_1">Visit Candidates for Common Good</span>
             </a>
             <p></p>
             <p></p>
             <img src="pics/endorsements/0d05b6_8eb5fd1bfc5d412795bc0134edfb84c8~mv2.png" alt="WoodstockCAN Endorsement" class="img-fluid mx-auto d-block" style="max-width:62%;"/>
             <p></p>
             <a href="https://www.ngacan.org/post/meet-steven-rogers-running-for-cherokee-county-board-of-commissioners-district-4" target="_blank" class="btn btn-sar-blue btn-lg d-block mx-auto" style="max-width:62%;">
-                <i class="bi bi-link-45deg me-2">Visit NorthGeorgiaCAN</i>
+                <i class="bi bi-link-45deg me-2"></i><span data-translate-key="election_endorsements_btn_2">Visit NorthGeorgiaCAN</span>
             </a>
             <p></p>
             <p></p>
@@ -171,8 +171,8 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-md-4">
-                    <h5>Steven Rogers for District 4</h5>
-                    <p>Democrat for Cherokee County Commissioner District 4</p>
+                    <h5 data-translate-key="footer_campaign_title">Steven Rogers for District 4</h5>
+                    <p data-translate-key="footer_campaign_sub">Democrat for Cherokee County Commissioner District 4</p>
                     <div>
                         <a href="https://www.instagram.com/electstevenrogers" target="_blank" class="social-icon"><i class="bi bi-instagram"></i></a>
                         <a href="https://www.tiktok.com/@electstevenrogers" target="_blank" class="social-icon"><i class="bi bi-tiktok"></i></a>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h5>Quick Links</h5>
+                    <h5 data-translate-key="footer_quick_links">Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="about.html">About Steven</a></li>
                         <li><a href="issues.html">Issues</a></li>
@@ -190,11 +190,11 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h5>Take Action</h5>
+                    <h5 data-translate-key="footer_take_action">Take Action</h5>
                     <ul class="list-unstyled">
-                        <li><a href="https://secure.actblue.com/donate/steven-rogers-1" target="_blank"><i class="bi bi-heart-fill"></i> Donate via ActBlue</a></li>
-                        <li><a href="https://mvp.sos.ga.gov/s/" target="_blank"><i class="bi bi-person-check-fill"></i> Check Voter Status</a></li>
-                        <li><a href="https://mvp.sos.ga.gov/s/olvr-home#no-back-button" target="_blank"><i class="bi bi-check2-square"></i> Register to Vote</a></li>
+                        <li><a href="https://secure.actblue.com/donate/steven-rogers-1" target="_blank"><i class="bi bi-heart-fill"></i> <span data-translate-key="footer_donate_actblue">Donate via ActBlue</span></a></li>
+                        <li><a href="https://mvp.sos.ga.gov/s/" target="_blank"><i class="bi bi-person-check-fill"></i> <span data-translate-key="footer_check_voter_status">Check Voter Status</span></a></li>
+                        <li><a href="https://mvp.sos.ga.gov/s/olvr-home#no-back-button" target="_blank"><i class="bi bi-check2-square"></i> <span data-translate-key="footer_register_vote">Register to Vote</span></a></li>
                         <li><a href="mailto:steven@electstevenrogers.com"><i class="bi bi-envelope"></i> steven@electstevenrogers.com</a></li>
                     </ul>
                 </div>
@@ -248,7 +248,7 @@
 
         async function loadDistrictBoundary() {
             try {
-                var geojson = 'lib/bootstrap/dist/geoJSON/cherokee_district_4.geojson';
+                var geojson = 'lib/bootstrap/dist/geoJSON/cherokee_commissioner_district_4.geojson';
 
                 // 1. Load the data and provide a callback function
                 map.data.loadGeoJson(geojson, null, function(features) {
@@ -262,7 +262,7 @@
                         fillOpacity: 0.18
                     });
 
-                    let districtBounds = new google.maps.LatLngBounds();
+                    districtBounds = new google.maps.LatLngBounds();
                     
                     // Iterate through the features we just loaded
                     features.forEach(function(feature) {
@@ -283,7 +283,7 @@
         function createDistrictLabel() {
             var labelDiv = document.createElement('div');
             labelDiv.style.cssText = 'background:rgba(0,51,136,.85);color:#fff;font-weight:700;font-size:14px;padding:4px 12px;border-radius:6px;white-space:nowrap;pointer-events:none;box-shadow:0 2px 6px rgba(0,0,0,.3);';
-            labelDiv.textContent = 'District 20';
+            labelDiv.textContent = 'District 4';
 
             function DistrictOverlay(map, bounds) {
                 this.map_ = map;
@@ -356,3 +356,4 @@
 </body>
 
 <!-- Mirrored from www.ez4ga.org/electioninfo.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2026 02:20:13 GMT -->
+</html>
