@@ -484,12 +484,7 @@ function translatePage(lang) {
     });
     applyStaticTextTranslations(lang);
     applyMetaTranslations(lang);
-    const buttons = document.querySelectorAll('.lang-btn');
-    buttons.forEach(button => {
-        const isActive = button.dataset.lang === lang;
-        button.classList.toggle('active', isActive);
-        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-    });
+    _updateToggleButton(lang);
     updateUrlLang(lang);
     window.localStorage.setItem('siteLang', lang);
 }
@@ -560,17 +555,29 @@ function applyMetaTranslations(lang) {
     metaDescription.setAttribute('content', page.description || metaDescription.dataset.baseDescription);
 }
 
+function _updateToggleButton(lang) {
+    const btn = document.getElementById('lang-toggle-btn');
+    if (!btn) return;
+    btn.textContent = lang === 'en' ? 'Español' : 'English';
+    btn.setAttribute('aria-label', lang === 'en' ? 'Cambiar a Español' : 'Switch to English');
+}
+
 function initLanguageSwitcher() {
     const lang = getPreferredLanguage();
     translatePage(lang);
+    _updateToggleButton(lang);
     document.querySelectorAll('a[target="_blank"]').forEach(link => {
         link.setAttribute('rel', 'noopener noreferrer');
     });
-    document.querySelectorAll('.lang-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            translatePage(button.dataset.lang);
+    const toggleBtn = document.getElementById('lang-toggle-btn');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            const current = window.localStorage.getItem('siteLang') || defaultLang;
+            const next = current === 'en' ? 'es' : 'en';
+            translatePage(next);
+            _updateToggleButton(next);
         });
-    });
+    }
 }
 
 document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
